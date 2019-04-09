@@ -15,9 +15,7 @@ ACCOUNTS_URL = os.path.join(HOST, "accounts")
 
 date = os.environ.get("NARMI_DATE", datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")) #> "2019-04-09T17:02:26Z"
 sig = os.environ.get("NARMI_SIG", "OOPS")
-
-signature = f"keyId='{TOKEN}',algorithm='hmac-sha256',headers='date',signature={sig}"
-#> Signature: keyId="_____",algorithm="hmac-sha256",headers="date",signature="_________"
+signature = f'keyId="{TOKEN}",algorithm="hmac-sha256",headers="date",signature="{sig}"'
 
 headers = {
     "Authorization": f"Bearer {TOKEN}",
