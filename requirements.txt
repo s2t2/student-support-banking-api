@@ -1,0 +1,3 @@
+python-dotenv
+requests
+git+https://github.com/narmitech/banking-client-python.git
