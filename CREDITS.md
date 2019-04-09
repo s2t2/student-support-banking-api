@@ -31,3 +31,8 @@ Doesn't import?
 
   + http://docs.python-requests.org/en/master/user/quickstart/
   + https://stackoverflow.com/questions/6260457/using-headers-with-the-python-requests-librarys-get-method
+
+## System Calls
+
+  + https://stackoverflow.com/a/4256153/670433
+  + https://github.com/prof-rossetti/repo-evaluator-py/blob/6cf3030967ddaea7eebc3204b8587408a53104e6/app/repo_downloader.py#L5-L14
