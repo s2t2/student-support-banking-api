@@ -1,0 +1,45 @@
+{
+	"accounts": [{
+		"name": "Primary Checking",
+		"id": "acct-123-456-abc",
+		"number": "43333=X",
+		"type": "deposit",
+		"updated_at": "2016-11-02T03:29:18.317000Z",
+		"users": [{
+			"paper_statements": null,
+			"email": "hello@example.com",
+			"username": "testuser",
+			"id": "user-123-456-abc",
+			"addresses": [],
+			"phone_numbers": [],
+			"first_name": "",
+			"last_name": ""
+		}],
+		"features": ["transfer_source", "transfer_destination", "ach_destination", "deposit_destination"],
+		"routing": "0000-0000-0",
+		"loan_details": {},
+		"source": "institution",
+		"state": "active"
+	}, {
+		"name": "Savings",
+		"id": "acct-789-098-def",
+		"number": "43333=A",
+		"type": "deposit",
+		"updated_at": "2016-11-02T03:29:18.317000Z",
+		"users": [{
+			"paper_statements": null,
+			"email": "hello@example.com",
+			"username": "testuser",
+			"id": "user-123-456-abc",
+			"addresses": [],
+			"phone_numbers": [],
+			"first_name": "",
+			"last_name": ""
+		}],
+		"features": ["transfer_source", "transfer_destination", "ach_destination", "deposit_destination"],
+		"routing": "0000-0000-0",
+		"loan_details": {},
+		"source": "institution",
+		"state": "active"
+	}]
+}

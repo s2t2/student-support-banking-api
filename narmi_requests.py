@@ -28,5 +28,5 @@ response = requests.get(ACCOUNTS_URL, headers=headers)
 
 print("-------------------")
 print("RESPONSE:", type(response))
-print(response.status_code) #> 401
-print(response.text) #> {"message":"No signature provided","id":"authentication_failed"}
+print(response.status_code)
+print(response.text)
