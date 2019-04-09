@@ -14,6 +14,11 @@ date=`date -u +'%Y-%m-%dT%H:%M:%SZ'`
 signature=`echo -n "date: $date" | openssl dgst -sha256 -binary -hmac "$secret" | base64`
 
 curl -H "Authorization: Bearer $token" -H "Date: $date" -H "Signature: keyId=\"$token\",algorithm=\"hmac-sha256\",headers=\"date\",signature=\"$signature\"" 'https://api.demo.narmitech.com/v1/accounts/'
+
+# also works:
+curl https://api.demo.narmitech.com/v1/accounts/ -H "Authorization: Bearer $token" \
+    -H "Date: $date" \
+    -H "Signature: keyId=\"$token\",algorithm=\"hmac-sha256\",headers=\"date\",signature=\"$signature\""
 ```
 
 ## Narmi Banking Client Package
@@ -36,3 +41,4 @@ Doesn't import?
 
   + https://stackoverflow.com/a/4256153/670433
   + https://github.com/prof-rossetti/repo-evaluator-py/blob/6cf3030967ddaea7eebc3204b8587408a53104e6/app/repo_downloader.py#L5-L14
+  + https://stackoverflow.com/questions/89228/calling-an-external-command-in-python
